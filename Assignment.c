@@ -9,7 +9,7 @@ void heartRate (int, int){
     float intensity = START;
     do{
         targetHeartRate = ((220 - age)- restingPulse) * (intensity) + restingPulse;
-        printf(" %.0f   \t           %.0f\n",intensity*100,targetHeartRate);
+        printf("%.0f  \t         %.0f bpm\n",intensity*100,targetHeartRate);
         
         intensity += .05;
     }while(STOP(intensity));
